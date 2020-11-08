@@ -7,6 +7,35 @@
 
 <style type="text/css">
 
+  #subForm{
+    font-size: 0.8em;
+  }
+
+  #subForm .etiq{
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+
+  #suscribe{
+    margin-left: 250px;
+    background-color: greenyellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #nombre, #email, #comentarios{
+    background-color: red;
+    font-family: monospace;
+    font-size: .9em;
+    width: 300px;
+    margin-top: -3px;
+  }
+
+  #nombre:focus, #email:focus, #comentarios:focus, #refer:focus{
+    background-color: rebeccapurple;
+  }
 
 
 </style>
@@ -33,44 +62,47 @@
   <div id="cuerpo">
     <h1 id="lead"><span class="section">Reg&iacute;strate:</span> Formulario de suscripci&oacute;n</h1>
     
-    <form id="subForm" name="subForm" method="post" action="">
-    <p><label for="nombre" >Nombre </label>
-      <input type="text" name="name" id="nombre" /></p>
-	  <p><label for="direccion">Direcci&oacute;n correo-e </label>
-      <input type="text" name="email" id="email" /></p>
-	  <p>Nivel
-	    <label>
-        <input name="nivel" type="radio" value="novice" />
-        Principiante</label>
-	    <label>
-	    <input name="nivel" type="radio" value="intermediate" />
-	    Intermedio</label>
-	    <label>
-	    <input name="nivel" type="radio" value="advanced" />
-	    Avanzado</label>
-	  </p>
-	  <p>
-	    <label for="referencias">&iquest;C&oacute;mo nos has conocido?  </label>
-	    <select name="refer" id="refer">
-	      <option value="null">Selecciona una</option>
-	      <option value="1">Amigos</option>
-	      <option value="2">Internet</option>
-	      <option value="3">Prensa</option>
-	      <option value="4">Otros</option>
-        </select>
-	  </p>
-	  <p>
-	    <label for="comentarios" >Comentarios adicionales </label>
-        <textarea name="comments" cols="35" rows="4" id="comentarios"></textarea>
-	  </p>
-	  <p>
-	    <input type="submit" name="Submit" id="suscribe" value="Suscr&iacute;bete !" />
-	  </p>
+      <form id="subForm" name="subForm" method="post" action="">
+      <p><label class="etiq" for="nombre" >Nombre </label>
+        <input type="text" name="name" id="nombre" /></p>
+      <p><label for="direccion" class="etiq">Direcci&oacute;n correo-e </label>
+        <input type="text" name="email" id="email" /></p>
+      <!-- <p><label class="etiq">Nivel </label> -->
+      <p><span class="etiq">Nivel </span>
+        <label>
+          <input name="nivel" type="radio" value="novice" />
+          Principiante</label>
+        <label>
+        <input name="nivel" type="radio" value="intermediate" />
+        Intermedio</label>
+        <label>
+        <input name="nivel" type="radio" value="advanced" />
+        Avanzado</label>
+      </p>
+      <p>
+        <label for="referencias" class="etiq">&iquest;C&oacute;mo nos has conocido?  </label>
+        <select name="refer" id="refer">
+          <option value="null">Selecciona una</option>
+          <option value="1">Amigos</option>
+          <option value="2">Internet</option>
+          <option value="3">Prensa</option>
+          <option value="4">Otros</option>
+          </select>
+      </p>
+      <p>
+        <label for="comentarios" class="etiq" >Comentarios adicionales </label>
+          <textarea name="comments" cols="35" rows="4" id="comentarios"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="Submit" id="suscribe" value="Suscr&iacute;bete !" />
+      </p>
     </form>
 	<br class="clear" />
     <p class="privacy">P&iacute;ldoras inform&aacute;ticas sabe que tu privacidad es importante. por eso nuestros datos est&aacute;n protegidos contra el fraude. La ley de protecci&oacute;n de datos te ampara en caso de publicaci&oacute;n malintencionada de algunos de tus datos.</p>
   </div>
+  
   <!-- fin prinicpal -->
+
   <div id="announce">
     <ul>
       <li><a href="#"><span class="title">Libra: es tu mes</span>Lorem ipsum dolor site amet.</a></li>
