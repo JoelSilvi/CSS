@@ -1,0 +1,19 @@
+.contenedor{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.imagen_superior{
+    position: absolute;
+    top: 106px;
+    right: 89px;
+}
+
+
+.imagen_inferior{
+    position: absolute;
+    top: 203px;
+    right: 90px;
+}
