@@ -1,0 +1,59 @@
+body {
+	margin:0;
+}
+
+header {
+	background: lightblue;
+	min-height: 95px;
+	border-bottom: 3px solid black;
+}
+
+footer {
+	background: teal;
+	min-height:90px;
+	border-top:3px solid black;
+}
+
+nav {
+	background: goldenrod;
+	display:block;
+	flex: 0 1 20%;
+}
+
+.principal{
+	background-color: dimgrey;
+	min-height: 60vh;
+	
+}
+
+aside {
+	background: red;
+	min-height: 20vh;
+}
+
+
+@media only screen and (min-width: 768px){
+	.contenedor-flex {
+	min-height: 80vh;
+	display: flex;
+	
+	}
+
+nav {
+	background: goldenrod;
+	display:block;
+	flex: 0 1 20%;
+	}
+
+.principal{
+	background: grey;
+	flex: 0 1 65%;
+	}
+
+aside {
+	background: red;
+	flex: 0 1 15%;
+	}
+
+}
+

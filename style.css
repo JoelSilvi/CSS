@@ -1,0 +1,113 @@
+.contenedor-flex{
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    background: lightblue;
+    border: solid black 3px;
+    display: flex;
+
+
+    /* 1.- Dirección Flex */
+
+    /* flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+
+    /*2.- Flex wrap se apilan las cajas*/
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+
+    /* 3.- Sintáxis Abreviada punto 2 */
+
+    /* flex-flow: row-reverse wrap; */
+
+
+    /* 4.- Alineación en el eje principal */
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+
+    /* 5.- Alineación ene el eje transversal */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch;   */
+    /* align-items: baseline; */
+
+
+    /* 6.- Alineación de las filas en el eje transversal */
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* stretch se utiliza sin alto y sin ancho */
+    /* align-content: stretch; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+}
+
+
+
+.contenedor-flex > .caja1{
+    background-color: coral;
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    order: 3;
+
+    /* 7.- Alineación del elemento flex */
+
+    /* align-self: auto; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+    /* align-self: baseline; */
+    /* align-self: stretch; */
+
+
+    /* 8.- Flex (grow | shrink | basis */
+
+    /* flex: 2 3 20%; */
+}
+
+
+.caja2{
+    background-color: coral;
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    order: 1;
+}
+
+
+
+.caja3{
+    background-color: coral;
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    order: 2;
+}
