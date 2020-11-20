@@ -30,10 +30,9 @@ nav{
     background-color: teal;
     position: sticky;
     top: 10px;
+}
 
-
-    /* z-index: determina el orden de los elementos cuando se sobreponen; */
+ /* z-index: determina el orden de los elementos cuando se sobreponen; */
     /* z-index: 3;
     z-index: 2;
     z-index: 1; */
-}
