@@ -1,0 +1,39 @@
+#contenedor-padre{
+    background-color: dimgrey;
+    height: 800px;
+    width: 700px;
+}
+
+#primer-contenedor{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    position: sticky;
+    top: 200px;
+}
+
+#segundo-contenedor{
+    background-color: firebrick;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 400px;
+}
+
+#tercer-contenedor{
+    background-color: deepskyblue;
+    height: 200px;
+    width: 200px;
+}
+
+nav{
+    background-color: teal;
+    position: sticky;
+    top: 10px;
+
+
+    /* z-index: determina el orden de los elementos cuando se sobreponen; */
+    /* z-index: 3;
+    z-index: 2;
+    z-index: 1; */
+}
